@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body { font: 20px Arial; background-color: rgba(243, 222, 255, 0.738); text-align: center; align-items: center;}
+        button { font-size:20px;  background-color: rgb(86, 114, 37); color: white; height:30px; width: 150px; text-align: center;}
+        button:hover{color: rgb(255, 255, 255); background-color: rgb(8, 163, 55);}
+        h1{ font-size: 50px; color: rgb(99, 26, 26);}
+        img { height:80%; width: 90%;}
+        div { width: 210px;height: 300px ; float: left;}
+        
+        </style>
+        
+</head>
+<body>
+    <h1>Votação📜✏️</h1>
+
+    <div>
+    <img src="p1.avif" alt="">
+    <button onclick="a1()">❤️1❤️</button>
+    </div>
+
+    <div><img src="p2.avif" alt="">
+    <button onclick="a2()">❤️2❤️</button></div>
+
+    <div><img src="p3.jpg" alt="">
+    <button onclick="a3()">❤️3❤️</button></div>
+
+    <div><img src="p4.jpg" alt="">
+    <button onclick="a4()">❤️4❤️</button></div>
+
+
+    <section id="s1"> <P>Resultado A:</P></section>
+    <section id="s2"> <P>Resultado B:</P></section>
+    <section id="s3"> <P>Resultado C:</P></section>
+    <section id="s4"> <P>Resultado D:</P></section>
+    
+<script>
+        let contador1 = 0
+        let contador2 = 0
+        let contador3 = 0
+        let contador4 = 0
+
+        let vot1 = document.querySelector('section#s1')
+        let vot2 = document.querySelector('section#s2')
+        let vot3 = document.querySelector('section#s3')
+        let vot4 = document.querySelector('section#s4')
+        
+function a1() { 
+            contador1++
+            vot1.innerHTML = `<p>candidatoA <mark>${contador1}</mark> votos!!!</p>`}
+ function a2() { 
+            contador2++
+            vot2.innerHTML = `<p>candidatoB  <mark>${contador2}</mark> votos!!!</p>`}
+ function a3() { 
+            contador3++
+            vot3.innerHTML = `<p>candidatoC  <mark>${contador3}</mark> votos!!!</p>`}
+ function a4() { 
+            contador4++
+            vot4.innerHTML = `<p>candidatoD  <mark>${contador4}</mark> votos!!!</p>`}
+</script>
+</body>
+</html>
